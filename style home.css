@@ -15,7 +15,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(255, 255, 255);
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
 .WELCOME {
@@ -415,10 +415,50 @@ p {
 }       
 
 
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+     
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+.social-icons img {
+    width: 50px;
+    height: 20px;
+    margin: 0 ; /* تحديد المسافة بين الصور */
+    max-width: 100%; /* جعل الصور تمتد لتأخذ العرض الكامل */
+    height: auto; /* السماح لارتفاع الصور بالتكيف مع العرض المحدد */
+    flex-grow: 1; /* التحكم في نسبة النمو حسب حجم الشاشة */
+
+    
+}
 
 
 
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px; /* تقليل المسافة الداخلية */
+    height: 50px; /* تقليل ارتفاع الفوتر */
+}
 
+
+h4 {
+    text-align: center;
+    
+}
 
 
