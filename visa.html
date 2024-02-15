@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأكيد الشراء</title>
+    <style>
+    
+    
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .confirmation-message {
+            display: none;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+      
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+     
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .yes-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no-button {
+            background-color: #f44336;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="confirm-message">
+        <p>هل أنت متأكد من شراء هذا المنتج؟</p>
+    </div>
+    
+   
+<div class="confirmation-message" id="confirmationMessage">تم شراء المنتج بنجاح.</div>
+<div class="confirmation-message" id="confirmationMessage">تم شراء المنتج بنجاح.</div>
+<div class="form-container">
+    <button class="yes-button" onclick="showConfirmation()">نعم</button>
+    <button class="no-button" onclick="goToHomePage()">لا</button>
+</div>
+
+<script>
+    function showConfirmation() {
+        var confirmationMessage = document.getElementById("confirmationMessage");
+        confirmationMessage.style.display = "block";
+    }
+
+    function goToHomePage() {
+        window.location.href = "./index.html"; // توجيه المستخدم إلى الصفحة الرئيسية
+    }
+</script>
+</body>
+</html>
+
+

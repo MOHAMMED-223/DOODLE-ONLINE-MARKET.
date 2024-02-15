@@ -114,22 +114,11 @@ table tbody tr:nth-child(even) {
     color: #fff;
     text-align: center;
 
+
 }
 /* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-}
 
-header {
-    background-color: #333;
-    padding: 20px;
-}
 
 nav ul {
     list-style-type: none;
@@ -145,13 +134,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-.hero {
-    background-image: url('hero.jpg');
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
 
 .featured-products {
     text-align: center;
@@ -178,6 +160,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+   
 }
 
 .footer-links a {
@@ -443,6 +426,16 @@ p {
 h4 {
     text-align: center;
     
+}
+
+a {
+    color: blue; /* تغيير لون الرابط */
+    text-decoration: none; /* إزالة الخط الأسفلي */
+}
+
+/* تغيير لون الرابط عند التحويم عليه */
+a:hover {
+    color: rgb(255, 255, 255); /* تغيير لون الرابط عند التحويم عليه */
 }
 
 
