@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تفاصيل الفيزا</title>
     <h1>Payment Data</h1>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
-            color: #ff0000; /* يمكنك استخدام أكواد الألوان أو الألوان بالاسم هنا */
-            
-
+            color: #ff0000;
         }
         .visa-logo {
             width: 250px;
-            margin: 10px ;
+            margin: 10px auto; /* توسيط الصورة */
+            display: block; /* جعل الصورة عنصراً مستقلاً */
         }
         .form-container {
             width: 300px;
             margin: 0 auto;
-            
-            
         }
         .form-container input {
             width: 100%;
@@ -30,22 +28,36 @@
             margin-bottom: 10px;
             border-radius: 5px;
             border: 1px solid #ccc;
+            box-sizing: border-box; /* لمنع امتداد الحقول عند إضافة الحدود والحشو */
         }
         .form-container button {
-            width: 70%;
+            width: 100%; /* تعديل عرض الزر ليكون متساوي مع الحقول */
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #0800ff;
             color: white;
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            
-            
         }
-        sub {
-            color: #ff0505; /* يمكنك استخدام أكواد الألوان أو الألوان بالاسم هنا */
-            text-decoration: none; /* لإزالة الخط الأسفلي من الرابط */
+        /* تحسين شكل الهايبرلينك */
+        .back-button {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #ff0000;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease; /* تأثير التحويل عند تحويل المؤشر */
 
+        }
+        .back-button:hover {
+            background-color: #cc0000; /* تغيير لون الخلفية عند التحويل */
+        }
+        .back-button {
+            width: calc(100% * 2 / 5); /* حساب النسبة 3:2 */
+            background-color: #ccc;
+            color: #b22222;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -56,10 +68,20 @@
             <input type="text" placeholder="رقم البطاقة">
             <input type="text" placeholder="تاريخ الانتهاء (MM/YY)">
             <input type="text" placeholder="CVV">
-           
-            <button class="sub" type="submit"><a href="./visa.html">تأكيد الدفع</button></a>
+            <button type="button" class="back-button" onclick="gosToProductsPage()">تاكيد الدفع </button>
+            <button type="button" class="back-button" onclick="goToProductsPage()">العودة للصفحة السابقة</button>
            
         </form>
     </div>
+
+    <script>
+        function goToProductsPage() {
+            window.location.href = './index.html '; // توجيه المستخدم إلى صفحة المنتجات
+        }
+        function gosToProductsPage() {
+            window.location.href = './visa.html '; // توجيه المستخدم إلى صفحة المنتجات
+        }
+    </script>
 </body>
 </html>
+                     

@@ -120,19 +120,6 @@ table tbody tr:nth-child(even) {
 
 
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
 
 
 .featured-products {
@@ -435,8 +422,7 @@ a {
 
 /* تغيير لون الرابط عند التحويم عليه */
 a:hover {
-    color: rgb(255, 255, 255); /* تغيير لون الرابط عند التحويم عليه */
+    color: red; /* تغيير لون الرابط عند التحويم عليه */
 }
-
 
 
